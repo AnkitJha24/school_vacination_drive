@@ -3,31 +3,31 @@
 -- Role: school_user
 -- DROP ROLE IF EXISTS school_user;
 
--- CREATE ROLE school_user WITH
---   LOGIN
---   NOSUPERUSER
---   INHERIT
---   NOCREATEDB
---   NOCREATEROLE
---   NOREPLICATION
---   NOBYPASSRLS
---   ENCRYPTED PASSWORD 'SCRAM-SHA-256$4096:dambEdbk9fAVx+qAaXv+mw==$TvlFLLSkUA6+i/3bB7fLyryEE7wqdRKZnOoOUsOd3lY=:B9acSSH4fG47PxoTh5schwEhzyAGci4xmTO+dG+m3PI=';
+CREATE ROLE school_user WITH
+  LOGIN
+  NOSUPERUSER
+  INHERIT
+  NOCREATEDB
+  NOCREATEROLE
+  NOREPLICATION
+  NOBYPASSRLS
+  ENCRYPTED PASSWORD 'SCRAM-SHA-256$4096:dambEdbk9fAVx+qAaXv+mw==$TvlFLLSkUA6+i/3bB7fLyryEE7wqdRKZnOoOUsOd3lY=:B9acSSH4fG47PxoTh5schwEhzyAGci4xmTO+dG+m3PI=';
 
--- /* Script to create database */
--- -- Database: school_vaccine_db
+/* Script to create database */
+-- Database: school_vaccine_db
 
--- -- DROP DATABASE IF EXISTS school_vaccine_db;
+-- DROP DATABASE IF EXISTS school_vaccine_db;
 
--- CREATE DATABASE school_vaccine_db
---     WITH
---     OWNER = school_user
---     ENCODING = 'UTF8'
---     LC_COLLATE = 'English_India.1252'
---     LC_CTYPE = 'English_India.1252'
---     LOCALE_PROVIDER = 'libc'
---     TABLESPACE = pg_default
---     CONNECTION LIMIT = -1
---     TEMPLATE = template0;
+CREATE DATABASE school_vaccine_db
+    WITH
+    OWNER = school_user
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_India.1252'
+    LC_CTYPE = 'English_India.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    TEMPLATE = template0;
 
 /* Create table SequelizeMeta */
 -- Table: public.SequelizeMeta

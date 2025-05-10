@@ -17,7 +17,7 @@ This project is a full-stack application development project to manage vaccinati
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/AnkitJha24/school_vacination_drive
+    git clone https://github.com/AnkitJha24/school_vacination_drive.git
     ```
 2. Database setup:
     Download "PostgreSQL 17.0" from the official site depending on your device
